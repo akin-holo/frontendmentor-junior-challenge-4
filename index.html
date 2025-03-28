@@ -9,6 +9,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 
 
     <!-- facebook-->
@@ -32,10 +33,12 @@
 
       <div class="main-container">
          <div class="inputs-container">
-            <label for="bill">Bill</label>
-            <input id="bill" inputmode="numeric" />
+            <label for="bill">
+               <span class="bill">bill</span>
+               <input id="bill" inputmode="numeric" />
+            </label>
 
-            <label for="">
+            <label for="" class="percent-btn-wrapper">
                <button id="fivePercent">5%</button>
                <button id="tenPercent">10%</button>
                <button id="fifteenPercent">15%</button>
@@ -44,8 +47,10 @@
                <button id="custom">Custom</button>
             </label>
 
-            <label for="numberOfPeople">Number of People</label>
-            <input inputmode="numeric"/>
+            <label for="numberOfPeople">
+               <span class="number-0f-People">Number of People</span>
+               <input inputmode="numeric"/>
+            </label>
          </div>
 
          <div class="outputs-container">

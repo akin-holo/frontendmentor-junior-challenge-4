@@ -1,0 +1,65 @@
+:root {
+   --primary-green: hsl(172, 67%, 45%);
+   --secondary-green: hsl(183, 100%, 15%);
+   --grey-500: hsl(186, 14%, 43%);
+   --Grey-400: hsl(184, 14%, 56%);
+   --Grey-200: hsl(185, 41%, 84%);
+   --Grey-50: hsl(189, 47%, 97%);
+   --White: hsl(0, 100%, 100%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: var(--Grey-200);
+   font-family: "Space Mono", monospace;
+   font-weight: 400;
+}
+
+main {
+   margin: 10%;
+}
+
+h1 {
+   color: var(--secondary-green);
+   text-transform: uppercase;
+   /* text-align: center; */
+   width: 4ch;
+}
+
+.main-container {
+   display: flex;
+   background-color: var(--White);
+   border-radius: 10px;
+}
+.inputs-container {
+   display: block;
+   width: 50%;
+   margin: 3%;
+}
+
+.percent-btn-wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 100px);
+   gap: 10px;
+}
+
+
+.outputs-container {
+   width: 50%;
+   margin: 3%;
+   background-color: var(--secondary-green);
+   border-radius: inherit;
+}
+
+h2 {
+   color: var(--White);
+   text-transform: capitalize;
+}
+.per-person {
+   color: var(--grey-500);
+}
+
