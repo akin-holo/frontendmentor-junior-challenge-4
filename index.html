@@ -6,10 +6,13 @@
    <title>Tip Calculator App | By Akin Holo</title>
 
    <link rel="icon" type="image/x-icon" href="https://github.com/akin-holo/image-preview/blob/main/logo.png?raw=true">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 
     <!-- facebook-->
-    <meta property="og:url" content="URL of your page">
+    <meta property="og:url" content="https://frontendmentor-jr-tip-calculator-app.netlify.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Tip Calculator App">
     <meta property="og:description" content="Solution to Frontendmentor Tip Calculator App challenge">
@@ -21,8 +24,49 @@
     <meta name="twitter:title" content="Tip Calculator App">
     <meta name="twitter:description" content="Solution to Frontendmentor Tip Calculator App challenge">
     <meta name="twitter:image" content="URL to an image related to your page">
-    <meta name="twitter:url" content="URL of your page">
+    <meta name="twitter:url" content="https://frontendmentor-jr-tip-calculator-app.netlify.app/">
 </head>
 <body>
+   <main>
+      <h1>splitter</h1>
+
+      <div class="main-container">
+         <div class="inputs-container">
+            <label for="bill">Bill</label>
+            <input id="bill" inputmode="numeric" />
+
+            <label for="">
+               <button id="fivePercent">5%</button>
+               <button id="tenPercent">10%</button>
+               <button id="fifteenPercent">15%</button>
+               <button id="twentyPercent">20%</button>
+               <button id="twentyFivePercent">25%</button>
+               <button id="custom">Custom</button>
+            </label>
+
+            <label for="numberOfPeople">Number of People</label>
+            <input inputmode="numeric"/>
+         </div>
+
+         <div class="outputs-container">
+            <div>
+               <div>
+                  <h2>tip amount</h2>
+                  <p class="per-person">/ person</p>
+               </div>
+               <span id="tipAmountOutPut" aria-live="polite"></span>
+            </div>
+            <div>
+               <div>
+                  <h2>total</h2>
+                  <p class="per-person">/ person</p>
+               </div>
+               <span id="totalAmountOutPut" aria-live="polite"></span>
+            </div>
+
+            <button type="reset">reset</button>
+         </div>
+      </div>
+   </main>
 </body>
 </html>
