@@ -29,31 +29,41 @@
 </head>
 <body>
    <main>
-      <h1>splitter</h1>
+      <h1>
+         <img src="asset/logo.svg" alt="splitter logo">
+      </h1>
 
       <div class="main-container">
-         <div class="inputs-container">
+         <!-- inputs section-->
+         <section class="inputs-container">
             <label for="bill">
-               <span class="bill">bill</span>
-               <input id="bill" inputmode="numeric" />
+               <span class="name">Bill</span>
+               <input class="bill" id="bill" inputmode="numeric" />
             </label>
 
-            <label for="" class="percent-btn-wrapper">
-               <button id="fivePercent">5%</button>
-               <button id="tenPercent">10%</button>
-               <button id="fifteenPercent">15%</button>
-               <button id="twentyPercent">20%</button>
-               <button id="twentyFivePercent">25%</button>
-               <button id="custom">Custom</button>
-            </label>
+            <div class="tips-wrapper">
+               <span>Select Tip %</span>
+               <div class="percent-btn-wrapper">
+                  <button class="percent-btn" id="fivePercent">5%</button>
+                  <button class="percent-btn" id="tenPercent">10%</button>
+                  <button class="percent-btn" id="fifteenPercent">15%</button>
+                  <button class="percent-btn" id="twentyPercent">20%</button>
+                  <button class="percent-btn" id="twentyFivePercent">25%</button>
+                  <button class="percent-btn custom" id="custom">Custom</button>
+               </div>
+            </div>
 
-            <label for="numberOfPeople">
-               <span class="number-0f-People">Number of People</span>
-               <input inputmode="numeric"/>
-            </label>
-         </div>
+            <div class="people-area-wrap">
+               <div class="spans-wrap">
+                  <span class="name">Number of People</span>  
+                  <span class="error-message" id="errorMessage">Can't be zero</span>   
+               </div>
+               <input class="number-of-people" id="numberOfPeople" inputmode="numeric"/>
+            </div>
+         </section>
 
-         <div class="outputs-container">
+         <!-- output section -->
+         <section class="outputs-container">
             <div>
                <div>
                   <h2>tip amount</h2>
@@ -70,7 +80,7 @@
             </div>
 
             <button type="reset">reset</button>
-         </div>
+         </section>
       </div>
    </main>
 </body>

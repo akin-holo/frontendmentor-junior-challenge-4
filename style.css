@@ -20,37 +20,77 @@ body {
 }
 
 main {
-   margin: 10%;
+   margin: 5%;
 }
 
-h1 {
-   color: var(--secondary-green);
-   text-transform: uppercase;
-   /* text-align: center; */
-   width: 4ch;
+h1 img {
+   display: block;
+   margin: 2rem auto;
 }
 
 .main-container {
    display: flex;
    background-color: var(--White);
    border-radius: 10px;
+   /* width: 50em; */
 }
 .inputs-container {
    display: block;
    width: 50%;
-   margin: 3%;
+   margin: 3% 1.5% 3% 3%;
+   /* background-color: brown; */
+}
+.name,
+.bill,
+.number-of-people {
+   display: block;
+   width: 100%;
 }
 
+.tips-wrapper {
+   margin: 2rem 0;
+}
 .percent-btn-wrapper {
    display: grid;
    grid-template-columns: repeat(3, 100px);
    gap: 10px;
 }
+.percent-btn {
+   color: var(--White);
+   background-color: var(--secondary-green);
+   /* padding: 10px 0; */
+   border: none;
+   border-radius: 2px;
+   font-weight: 700;
+   font-family: "Space Mono", monospace;
+   font-size: 20px;
+}
+.percent-btn:hover {
+   color: var(--secondary-green);
+   background-color: var(--primary-green);
+}
+.custom {
+   color: var(--grey-500);
+   background-color: var(--Grey-50);
+}
+.custom:hover {
+   color: var(--secondary-green);
+   outline: 2px solid var(--primary-green);
+   background-color: var(--Grey-50);
+}
 
+.people-area-wrap  .spans-wrap {
+   display: flex;
+   justify-content: space-between;
+}
+.spans-wrap .error-message {
+   color: #ff0000;
+}
 
+/* outputs style */
 .outputs-container {
    width: 50%;
-   margin: 3%;
+   margin: 3% 3% 3% 1.5%;
    background-color: var(--secondary-green);
    border-radius: inherit;
 }
