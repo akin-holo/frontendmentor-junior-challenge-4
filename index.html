@@ -37,8 +37,8 @@
          <!-- inputs section-->
          <section class="inputs-container">
             <label for="bill">
-               <span class="name">Bill</span>
-               <input class="bill" id="bill" inputmode="numeric" />
+               <span class="bill">Bill</span>
+               <input class="bill-amount" id="billAmount" inputmode="numeric" placeholder="0"/>
             </label>
 
             <div class="tips-wrapper">
@@ -55,31 +55,37 @@
 
             <div class="people-area-wrap">
                <div class="spans-wrap">
-                  <span class="name">Number of People</span>  
-                  <span class="error-message" id="errorMessage">Can't be zero</span>   
+                  <span class="number-of-people">Number of People</span>  
+                  <span class="error-message" id="errorMessage"></span>   
                </div>
-               <input class="number-of-people" id="numberOfPeople" inputmode="numeric"/>
+               <input class="input-number" id="inputNumber" inputmode="numeric" placeholder="0"/>
             </div>
          </section>
 
          <!-- output section -->
          <section class="outputs-container">
-            <div>
+            <div class="amounts-wrapper">
                <div>
                   <h2>tip amount</h2>
                   <p class="per-person">/ person</p>
                </div>
-               <span id="tipAmountOutPut" aria-live="polite"></span>
+               <span class="actual-amount" id="tipAmountOutPut" aria-live="polite">
+                  $0.00
+               </span>
             </div>
-            <div>
+            <div class="amounts-wrapper">
                <div>
                   <h2>total</h2>
                   <p class="per-person">/ person</p>
                </div>
-               <span id="totalAmountOutPut" aria-live="polite"></span>
+               <span class="actual-amount" id="totalAmountOutPut" aria-live="polite">
+                  $0.00
+               </span>
             </div>
 
-            <button type="reset">reset</button>
+            <div class="reset-btn-wrap">
+               <button type="reset" class="reset" id="reset" disabled>reset</button>
+            </div>
          </section>
       </div>
    </main>
