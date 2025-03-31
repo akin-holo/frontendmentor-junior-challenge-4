@@ -49,7 +49,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/akin-holo)
-- Twitter - [@yourusername](https://www.x.com/AkinHolo)
+- Frontend Mentor - [@akin-holo](https://www.frontendmentor.io/profile/akin-holo)
+- Twitter - [@AkinHolo](https://www.x.com/AkinHolo)
 
 
