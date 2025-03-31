@@ -187,3 +187,39 @@ h2 {
    background-color: var(--primary-green);
 }
 
+
+/* Breakpoints */
+@media screen and (max-width: 900px) {
+   /* body {
+      width: 100vw;
+   } */
+   main {
+      margin: 5% 1%;
+   }
+   .main-container {
+      flex-direction: column;
+      width: 96%;
+      /* margin: 4% 0; */
+   }
+
+   .inputs-container,
+   .outputs-container {
+      /* display: block; */
+      width: 96%;
+      margin: 2%;
+   }
+
+   .number-of-people,
+   .error-message {
+      font-size: 13px;
+   }
+
+   .percent-btn-wrapper {
+      grid-template-columns: repeat(2, 120px);
+   }
+
+   .reset {
+      margin: auto auto 20px auto;
+   }
+}
+
