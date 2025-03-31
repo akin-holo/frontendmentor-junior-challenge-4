@@ -47,6 +47,7 @@ h1 img {
    display: block;
    width: 100%;
    padding: 10px 0;
+   text-align: right;
    background-image: url("asset/icon-dollar.svg");
    background-repeat: no-repeat;
    background-position: 5%;
@@ -55,7 +56,6 @@ h1 img {
    font-size: 24px;
    border: none;
    outline: none;
-   direction: rtl;
 }
 ::placeholder {
    text-align: right;
@@ -70,7 +70,7 @@ h1 img {
 }
 .percent-btn-wrapper {
    display: grid;
-   grid-template-columns: repeat(3, 100px);
+   grid-template-columns: repeat(3, 120px);
    gap: 15px;
 }
 .percent-btn {
@@ -110,6 +110,7 @@ h1 img {
    display: block;
    width: 100%;
    padding: 10px 0;
+   text-align: right;
    background-image: url("asset/icon-person.svg");
    background-repeat: no-repeat;
    background-position: 5%;
@@ -118,7 +119,6 @@ h1 img {
    font-size: 24px;
    border: none;
    outline: none;
-   direction: rtl;
 }
 .spans-wrap .error-message {
    color: #ff0000;
